@@ -3,18 +3,15 @@
 	margin: 15px 0;
 }
 
-#results-table {
-	width: 100%;
+#albums {
+	text-align: center;
+	font-size: 1em;
 }
 
-#results-table tr {
-	display: block;
+#items {
+	padding: 160px;
 }
 
-#results-table td, #results-table th {
-	padding: 5px;
-}
-
-#results-table img {
+#albums img {
 	width: 200px;
 }
