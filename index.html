@@ -3,46 +3,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="container" id="page-wrapper">
 
+    <h1 class="title">2010s Women in Pop</h1>
+
     <div class="filter-wrapper">
 
       <div class="form-group" style="margin-right: 20px;">
-        <label for="orderBy">Order By</label>
+        <label for="orderBy">Order By:</label>
         <select id="orderBy" name="orderBy">
+          <option default>Select</option>
           <option value="artist">Artist</option>
           <option value="year">Year</option>
-          <option value="name">Album</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="published">Show Unpublished?</label>
-        <select id="published" name="published">
-          <option value="true">True</option>
-          <option value="false">False</option>
+        <label for="orderBy">Sort by Price:</label>
+        <select id="priceBy">
+          <option default>Select</option>
+          <option value="ltoh">Low to High</option>
+          <option value="htol">High to Low</option>
         </select>
       </div>
 
     </div>
 
-    <!--<table id="results-table">
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th>Cover</th>
-          <th>Artist</th>
-          <th>Year</th>
-          <th>Title</th>
-        </tr>
-      </thead>-->
-
+    <div class="flexcontainer">
       <div id="albums">
-        <!--<div class="items"></div>-->
+        <div class="items"></div>
       </div>
 
       <div class="grid-container">
@@ -50,10 +44,9 @@
 
         </div>
       </div>
+    </div>
 
       <!-- Results will be added through JavaScript -->
-      <tbody></tbody>
-    </table>
 
   </div>
 

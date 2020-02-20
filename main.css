@@ -1,15 +1,49 @@
+body {
+	background-color: azure;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+	text-align: center;
+	width: 90%;
+	display: inline-block;
+}
+
+@media only screen and (max width:769px) {
+	.filter-wrapper {
+		text-align: center;
+	}
+
+	#albums img {
+		width: 10px;
+	}
+}
+
 .filter-wrapper {
 	display: flex;
-	margin: 15px 0;
+	margin: 15px 50px;
 }
 
-#albums {
+.flexcontainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.items {
+	flex: 1 200px;
 	text-align: center;
 	font-size: 1em;
+	padding: 1em;
+	display: inline-block;
+	margin: 2px;
+	height: 300px;
+	vertical-align: middle;
 }
 
-#items {
-	padding: 160px;
+.text {
+	width: 200px;
+	padding: 5px;
 }
 
 #albums img {
