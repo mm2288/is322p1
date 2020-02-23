@@ -151,7 +151,6 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 			}
 		});
 
-
 		renderList(sortedResult);
 	}
 	// Change events trigger after the value of a form input changes
